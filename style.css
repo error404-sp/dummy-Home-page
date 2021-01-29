@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+body{
+    --main-background:#FFFFFF;
+    --contact-background:#100E1D;
+    --heading-color:#333333;
+    --gray2:#4F4F4F;
+    --gray3:#828282;
+    --blue:#2D9CDB;
+    font-family: Poppins;
+    color:var(--heading-color);
+    
+}
+.flexmain{
+    display:flex;
+    flex-direction:row;
+    
+}
+.item1{
+    width: 100px;
+}
+.item2{
+    width: 500px;
+}
+#logo{
+   font-family:Heebo;
+   font-weight:800;
+   font-size:36px;
+   line-height:53px;
+   width: 100px;
+}
+nav{
+    width: 500px;
+}
+nav a{
+text-decoration:none;
+font-size:24px;
+font-weight: 500;
+
+}
+ 
+.blue{
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 18px;
+}
+h1{
+font-family: Poppins;
+font-weight: 500;
+font-size: 48px;
+}
+
+main img{
+    border-radius: 18px;
+    max-width: 96%;
+    height:auto;
+    margin:0 2% 0 2%;
+    }
+main section p{
+    font-size: 18px;
+    font-weight:400;
+    color:var(--gray2);
+}
+#grey3{
+    color:var(--grey3);
+    font-weight: 500;
+    font-size: 14px;
+}
+input{
+    background: #F2F2F2;
+    border-radius: 5px;
+    width :280px;
+    height: 50px;
+    
+}
+label button{
+    background: var(--blue);
+    color: #F2F2F2;
+    height: 45px;
+    width: 60px;
+    position: relative;
+    left: -70px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+[placeholder='Email']{
+    font-weight: 500;
+    font-size: 18px;
+    color: #BDBDBD;
+    padding-left:20px;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 36px;
+}
+.square{
+    width:67px;
+    height:67px;
+    background: var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+}
+.svg1{
+    transform:scale(2);
+}
+ .green{
+    background: #27AE60;
+ }
+
+ .red{
+    background: #EB5757;
+ }
+
+ h3{
+    font-style: normal;
+    font-weight: 700;
+ }
+ .servicep{
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--gray2);
+ }
+
+ #services button{
+     background:#E0E0E0;
+     width: 116px;
+     height: 42px;
+     border-radius: 12px;
+     color:#828282;
+     font-weight: 500;
+     font-size: 16px;
+}
+#services button:hover{
+    background:var(--blue);
+    color: white;
+}
+
+#work img{
+    border-radius: 12px;
+}
+
+.projecttype{
+    color:var(--gray3);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.projectname{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#red{
+    color:#EB5757;
+    font-weight: 500;
+    font-size: 18px;
+}
+#teamp{
+    font-weight: 500;
+    font-size: 18px;
+    color:var(--gray2);
+}
+h5{
+    font-weight: 500;
+    font-size: 24px;
+}
+#clients p{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray2);
+}
+

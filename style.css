@@ -14,16 +14,21 @@ body{
     color:var(--heading-color);
     
 }
-.flexmain{
-    display:flex;
-    flex-direction:row;
+
+.item1{
+   
+}
+main .item2{
+    position:relative;
+    top:-80px;  
+    left: 50%;
+   
+
     
 }
-.item1{
-    width: 100px;
-}
-.item2{
-    width: 500px;
+
+main #flex-main,.item1,.item2{
+    margin:0px;
 }
 #logo{
    font-family:Heebo;
@@ -31,26 +36,43 @@ body{
    font-size:36px;
    line-height:53px;
    width: 100px;
+
 }
 nav{
-    width: 500px;
+    width: 600px;
+  
 }
 nav a{
 text-decoration:none;
 font-size:24px;
 font-weight: 500;
+color:#100E1D;
+padding:10px;
 
+}
+
+.box{
+    width: 50vw;
+    margin-left: 20vw;
+    
+}
+
+.box2{
+    width: 30vw;
+    margin-left: 20vw;
 }
  
 .blue{
     color: var(--blue);
     font-weight: 500;
     font-size: 18px;
+    margin:0;
 }
 h1{
 font-family: Poppins;
 font-weight: 500;
 font-size: 48px;
+margin:0;
 }
 
 main img{
@@ -72,9 +94,9 @@ main section p{
 input{
     background: #F2F2F2;
     border-radius: 5px;
-    width :280px;
+    width :300px;
     height: 50px;
-    
+    color:#333333;
 }
 label button{
     background: var(--blue);
@@ -82,7 +104,8 @@ label button{
     height: 45px;
     width: 60px;
     position: relative;
-    left: -70px;
+    top: -68px;
+    left: 240px;
     border-radius: 5px;
     font-weight: 500;
     font-size: 18px;
@@ -98,7 +121,7 @@ h2{
     font-weight: 500;
     font-size: 36px;
 }
-.square{
+#flex-container .square{
     width:67px;
     height:67px;
     background: var(--blue);
@@ -110,11 +133,11 @@ h2{
 .svg1{
     transform:scale(2);
 }
- .green{
+#flex-container .green{
     background: #27AE60;
  }
 
- .red{
+ #flex-container .red{
     background: #EB5757;
  }
 
@@ -122,12 +145,44 @@ h2{
     font-style: normal;
     font-weight: 700;
  }
+
+ section{
+     margin:0 3.5vw 0 3.5vw;
+ }
  .servicep{
     font-size: 16px;
     font-weight: 400;
     color:var(--gray2);
  }
+ #services h2,#work h2{
+     width: 30vw;
+ }
 
+ #flex-container{
+     display:flex;
+     flex-wrap: wrap;
+ }
+ #flex-container div{
+     width:300px;
+     height:400px;
+     margin: 20px;
+     display:flex;
+     border-radius: 12px;
+     flex-direction:column;
+}
+#flex-container div:hover{
+    box-shadow: 0px 10px 30px #828282;
+}
+
+#flex-container div h3,div,p,button{
+    margin: 20px 15px 20px 15px;
+
+    
+}
+#flex-container div:hover button{
+    background: #2D9CDB;
+    color:white;
+}
  #services button{
      background:#E0E0E0;
      width: 116px;
@@ -137,13 +192,14 @@ h2{
      font-weight: 500;
      font-size: 16px;
 }
-#services button:hover{
-    background:var(--blue);
-    color: white;
-}
+main #flex-main 
+
 
 #work img{
     border-radius: 12px;
+   
+    max-width: 96%;
+    
 }
 
 .projecttype{
@@ -162,6 +218,9 @@ h2{
     font-weight: 500;
     font-size: 18px;
 }
+#team{
+    margin-left: 15vw;
+}
 #teamp{
     font-weight: 500;
     font-size: 18px;
@@ -171,9 +230,87 @@ h5{
     font-weight: 500;
     font-size: 24px;
 }
+
 #clients p{
     font-weight: 500;
     font-size: 18px;
     color: var(--gray2);
+}
+#flex-main{
+    margin:0;
+}
+#work #grid-container{
+    margin-left: 0vw;
+}
+#work img{
+    border-radius: 24px;
+}
+#grid-container{
+    display:flex;
+}
+#y1{
+    margin-top: 180px
+}
+
+#team{
+    margin: 80px 0 80px 0;
+    margin-left: 5vw;
+    display:flex;
+    justify-content: space-around;
+}
+.team1{
+    width: 280px;
+}
+.team-images{
+    display:flex;
+    align-items: flex-end;
+}
+.b{
+    width:300px;
+
+}
+.a{
+    margin-bottom: 50px;
+}
+#team img{
+    border-radius:12px;
+}
+
+#clients{
+    margin:7.5vw;
+}
+#clients h2{
+    width: 981px;
+}
+#flex2{
+    display:flex;
+    align-items: flex-start;
+}
+#flex2 img{
+    border-radius: 12px;
+    max-width:100%;
+    height:auto;
+}
+#Contact nav{
+    display:flex;
+    flex-direction:column;
+}
+#Contact nav a{
+    color:#FFFFFF;
+}
+
+#Contact{
+    background:var(--contact-background);
+    margin:0;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+footer{
+  display:flex;
+  justify-content: center;
+  background:var(--contact-background);
+  color:#FFFFFF;
 }
 
